@@ -70,14 +70,14 @@
                               }});
     },
     render: function(model) {
-       var swtType = model.get('what');
+      var swtType = model.get('what');
       if (swtType === 'img-anno'){
         this.$('#' + model.get('id')).append(this.template(model.toJSON()));
       }
       else if (swtType === 'txt-anno') {
         this.$('#' + model.get('id')).append(this.txtTemplate(model.toJSON()));
       }
-    
+
     },
     onImgClicked: function(e) {
       var $lightbox = $("#lightbox");
