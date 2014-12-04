@@ -6,7 +6,7 @@
 a,
 a:focus,
 a:hover {
-    color: #fff;
+  color: #fff;
 }
 
 /* quotes */
@@ -20,10 +20,10 @@ q:after  { content: close-quote; }
 .btn-default,
 .btn-default:hover,
 .btn-default:focus {
-    color: #333;
-    text-shadow: none; /* Prevent inheritence from `body` */
-    background-color: #fff;
-    border: 1px solid #fff;
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
 }
 
 
@@ -33,157 +33,157 @@ q:after  { content: close-quote; }
 
 html,
 body {
-    height: 100%;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    text-shadow: 0 1px 3px rgba(0,0,0,.5);
-    font-family: 'Varela Round', sans-serif;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  font-family: 'Varela Round', sans-serif;
 }
 
 
 .container-fluid {
-    padding-right:0px;
-    padding-left:0px;
-    padding-top:10px;
-    margin-top:20px;
+  padding-right:0px;
+  padding-left:0px;
+  padding-top:10px;
+  margin-top:20px;
 }
 /* Introduction section, entry page - Start */
 .jumbotron{
-    background: transparent;
+  background: transparent;
 }
 
 .jumbotron p {
-    font-family: 'Oswald', sans-serif;
-    font-size: 30px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
 }
 
 #intro{
-    background-image: url('../img/bg1.jpg');
-    background-size:cover;
+  background-image: url('../img/bg1.jpg');
+  background-size:cover;
 
-    
-    background-attachment:fixed;
+
+  background-attachment:fixed;
 }
 
 /* Introduction section, entry page - End */
 
 #chapter1  .wrap{
-    text-align:justify;
-    background:transparent;
+  text-align:justify;
+  background:transparent;
 
 }
 
 
 
 #chapter2{
-    background-image: url('../img/bg4.jpg');
-    background-size:cover;
-   
-    background-attachment:fixed;
+  background-image: url('../img/bg4.jpg');
+  background-size:cover;
+
+  background-attachment:fixed;
 }
 
 #chapter3{
-    background-image: url('../img/bg6.jpg');
-    background-size:cover;
-    background-attachment:fixed;
-   
+  background-image: url('../img/bg6.jpg');
+  background-size:cover;
+  background-attachment:fixed;
+
 
 }
 
 #chapter4{
-    background-image: url('../img/bg3.jpg');
-    background-size:cover;
- 
-    background-attachment:fixed;
+  background-image: url('../img/bg3.jpg');
+  background-size:cover;
+
+  background-attachment:fixed;
 }
 
 /* Content wrap */
 .wrap{
-    background:#000;
-    text-align: justify;
-    margin-left:25px;
-    font-size:16px;
-    padding-bottom:15px;
-    padding-top:15px;
+  background:#000;
+  text-align: justify;
+  margin-left:25px;
+  font-size:16px;
+  padding-bottom:15px;
+  padding-top:15px;
 }
 
 /* Sweets Container view - Start */
 .modal-content {
-    background-color: #424242;
+  background-color: #424242;
 }
 
 .aboutRestory {
-    border-left:1px solid #ccc;
-    font-size:12px;
-    margin-top:10px;
-    height:28px;
+  border-left:1px solid #ccc;
+  font-size:12px;
+  margin-top:10px;
+  height:28px;
 }
 
 
 .story-image {
-    height: auto;
-    width: 100%;
-    border: 3px solid #ccc;
-    cursor: pointer;
+  height: auto;
+  width: 100%;
+  border: 3px solid #ccc;
+  cursor: pointer;
 }
 
 #lightbox .modal-content {
-    display: inline-block;
-    text-align: center;
+  display: inline-block;
+  text-align: center;
 }
 
 #lightbox .close {
-    opacity: 1;
-    color: #ccc;
-    background-color: rgb(42, 42, 42);
-    padding: 5px 8px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+  opacity: 1;
+  color: #ccc;
+  background-color: rgb(42, 42, 42);
+  padding: 5px 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 
-    z-index:1032;
+  z-index:1032;
 }
 
 .snipit {
-    height: 75px;
-    margin-bottom:-100px;
-    opacity: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    border:1px solid #ccc;
-    font-size:14px;
-    position:relative;
-    top: -75px;
-    transition-duration: 0.4s;
+  height: 75px;
+  margin-bottom:-100px;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border:1px solid #ccc;
+  font-size:14px;
+  position:relative;
+  top: -75px;
+  transition-duration: 0.4s;
 
 }
 
 .info-icon {
-    /* height: 120px; */
-    margin-bottom:-100px;
-    opacity: 1;
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    /* border:1px solid #ccc; */
-    position:relative;
-    top: -50px;
-    transition-duration: 0.4s;
+  /* height: 120px; */
+  margin-bottom:-100px;
+  opacity: 1;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  /* border:1px solid #ccc; */
+  position:relative;
+  top: -50px;
+  transition-duration: 0.4s;
 }
 
 .info-icon span {
-    height: 25px;
-    width: 40px;
-    padding: 3px 0 0 9px;
-    background-color: rgba(0, 0, 0, 0.5);
+  height: 25px;
+  width: 40px;
+  padding: 3px 0 0 9px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 div.row:hover .info-icon {
-    opacity: 0;
+  opacity: 0;
 }
 
 div.row:hover .snipit {
-    opacity: 1;
+  opacity: 1;
 }
 
 
@@ -201,22 +201,30 @@ div.row:hover .fullscreen-icon {
 }
 
 #modal-content, #modal-content a{
-    color: #000;
-    text-shadow: none;
+  color: #000;
+  text-shadow: none;
 }
 
 body .modal-open {
-    margin-right: 0px;
+  margin-right: 0px;
 }
 
 .modal-dialog {
-    margin: 0px auto;
+  margin: 0px auto;
+}
+
+.panel-body {
+  color:#000;
+}
+
+.panel-footer {
+  color:#000;
 }
 /* Sweets Container view - End */
 
 .footer {
-    font-size:16px;
-    margin-top:-15px;
+  font-size:16px;
+  margin-top:-15px;
 }
 
 
