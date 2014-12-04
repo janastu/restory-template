@@ -1,4 +1,4 @@
-(function() {
+(function(chapters) {
   var Sweet = Backbone.Model.extend({
     defaults: {
       'who': '',
@@ -109,33 +109,11 @@
       }
   });
   /* Populate views based on the requirement for the chapter */
-/*  new StoryView({collection: new Sweets(),
-    el: "#chapter2",
-      "who":"scribe",
-      "what":"img-anno",
-      "tag": "lolcat"});
-  new StoryView({collection: new Sweets(),
-    el: "#chapter3",
-      "who":"scribe",
-      "what":"img-anno",
-      "tag": "lolcat"});
+  _.each(chapters, function(chapter) {
+    chapter.collection = new Sweets();
+    new StoryView(chapter);
+  });
 
-  new StoryView({collection: new Sweets(),
-    el: "#chapter4",
-      "who":"scribe",
-      "what":"img-anno",
-      "tag": "lolcat"});
-  new StoryView({collection: new Sweets(),
-    el: "#story-content",
-      "who":"scribe",
-      "what":"img-anno",
-      "tag": "lolcat"});
-  new StoryView({collection: new Sweets(),
-    el: "#story-content",
-      "who":"scribe",
-      "what":"txt-anno",
-      "tag": "Auto"});
-*/
   var $lightbox = $('#lightbox');
   $lightbox.on('shown.bs.modal', function (e) {
     var $img = $lightbox.find('img');
@@ -150,4 +128,4 @@
     $('body').find('li[for="' + $(this).attr('id') + '"]' ).addClass('active');
   });
 
-})();
+})(chapters);
