@@ -220,6 +220,12 @@ body .modal-open {
 .panel-footer {
   color:#000;
 }
+
+.panel-footer a,
+a:focus,
+a:hover {
+  color: #000;
+}
 /* Sweets Container view - End */
 
 .footer {
