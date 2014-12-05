@@ -2,7 +2,7 @@ window.chapters = [{el: "#chapter2", //  html id of the container of chapter
                     "who":"scribe",  //  the author of the swt
                     "what":"img-anno", // the type of swt
                     "tag": "lolcat"}, // tag by which swt have to be filtered
-                   {el: "#chapter2",
+                   {el: "#chapter2",  //copy starting from the opening flower braces till closing braces
                    "who" : "scribe",
                    "what" : "txt-anno",
                    "tag" : "lolcat" },
@@ -21,4 +21,5 @@ window.chapters = [{el: "#chapter2", //  html id of the container of chapter
                    {el: "#story-content",
                     "who":"scribe",
                     "what":"txt-anno",
-                    "tag": "lolcat"}];
+                    "tag": "lolcat"},
+                    ];
