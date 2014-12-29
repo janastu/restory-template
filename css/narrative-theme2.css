@@ -44,7 +44,7 @@ header{
 }
 
 #header-text {
-    position:absolute;
+    position:relative;
     top:275px;
 }
 
@@ -53,7 +53,7 @@ header{
 
 /* Sweets Container view - Start */
 .modal-content {
-    background-color: #424242;
+    background-color: #999;
 }
 
 .aboutRestory {
@@ -155,6 +155,30 @@ body .modal-open {
 .modal-dialog {
     margin: 0px auto;
 }
+
+.panel {
+  margin-top:5px;
+}
+
+.panel-body {
+  color:#000;
+  background-color:#eee;
+}
+
+.panel-footer {
+  color:#000;
+  background-color:#ccc;
+}
+.panel-footer a,
+a:focus,
+a:hover {
+    color: #000;
+}
+
+.panel-default > .panel-heading {
+  background-color:#ccc;
+}
+
 /* Sweets Container view - End */
 
 footer {

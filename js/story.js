@@ -6,53 +6,54 @@
       'where': '',
       'how': {}
     },
-    initialize: function() {
-    },
-    hasTag: function(tag) {
-      return this.get('how')['tags'].indexOf(tag);
-    }
+      initialize: function() {
+      },
+      hasTag: function(tag) {
+        return this.get('how')['tags'].indexOf(tag);
+      }
   });
 
 
   var Sweets = Backbone.Collection.extend({
     model: Sweet,
-    getAll: function(options) {
-      // error checking
-      if(!options.what) {
-        throw Error('"what" option must be passed to get sweets of a URI');
-        return false;
-      }
-      // setting up params
-      var where = options.where || null,
-          what = options.what;
-      var who = options.who || null;
+      getAll: function(options) {
+        // error checking
+        if(!options.what) {
+          throw Error('"what" option must be passed to get sweets of a URI');
+          return false;
+        }
+        // setting up params
+        var where = options.where || null,
+      what = options.what;
+  var who = options.who || null;
 
       var url = swtConf.swtstore + "/api/sweets/q?what=" + what;
 
-      if(who) {
-        url += '&who=' + who;
+  if(who) {
+    url += '&who=' + who;
+  }
+  // get them!
+  this.sync('read', this, {
+    url: url,
+    success: function() {
+      if(typeof options.success === 'function') {
+        options.success.apply(this, arguments);
       }
-      // get them!
-      this.sync('read', this, {
-        url: url,
-        success: function() {
-          if(typeof options.success === 'function') {
-            options.success.apply(this, arguments);
-          }
-        },
-        error: function() {
-          if(typeof options.error === 'function') {
-            options.error.apply(this, arguments);
-          }
-        }
-      });
+    },
+    error: function() {
+      if(typeof options.error === 'function') {
+        options.error.apply(this, arguments);
+      }
     }
+  });
+      }
   });
 
 
   var StoryView = Backbone.View.extend({
     template: _.template($("#story-image-template").html()),
-    swtTemplate:_.template($("#swt-template").html()),
+      swtTemplate:_.template($("#swt-template").html()),
+      txtTemplate: _.template($("#txt-anno-template").html()),
     events: {
       "click [data-target='#lightbox']": 'onImgClicked'
     },
@@ -98,14 +99,14 @@
                  swt.get('who')});
       }
 
-      $("#modal-content").html("");
-      $("#modal-content").append(this.swtTemplate(swt.toJSON()));
-      $lightbox.find('.close').addClass('hidden');
-      $lightbox.find('img').attr('src', src);
-      $lightbox.find('img').attr('alt', alt);
-      $lightbox.find('img').css(css);
+        $("#modal-content").html("");
+        $("#modal-content").append(this.swtTemplate(swt.toJSON()));
+        $lightbox.find('.close').addClass('hidden');
+        $lightbox.find('img').attr('src', src);
+        $lightbox.find('img').attr('alt', alt);
+        $lightbox.find('img').css(css);
 
-    }
+      }
   });
   /* Populate views based on the requirement for the chapter */
   _.each(swtConf.chapters, function(chapter) {
