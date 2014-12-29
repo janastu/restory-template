@@ -1,13 +1,46 @@
+
 Create a restory from available media resources on the web.
 A set of HTML templates are avialable for a narrator to author his story.
 To author a story:
-- Edit the file "chapters.js", inside "js" directory.
-- Publish the HTML.
 
-Some example restory:
+You can create your own Annotations or Sweets, log in to
+http://restory.swtr.us/
+load any image or website from the internet to Annotate. 
+Then you can use your annotations and Sweets to create a Restory. 
 
-http://ptx.restory.swtr.us/sarakki-lake-restory/
+Step 1: Prepare Markup - An Author can choose to use the available HTML
+templates, narrative-theme1.html or narrative-theme2.html or can use a own
+theme. 
 
-http://ptx.restory.swtr.us/gds/
 
-http://ptx.restory.swtr.us/auto-restory/
+Step 2: To embed Media from a Sweet Store - 
+Part I: Choose the Sweets you need to embed in your markup -
+Visit the App http://restory.swtr.us/#/linked-data to browse the Sweets or image
+annotations from the Sweet Store http://thestore.swtr.in
+Make a note of the Sweet ID, of the annotation you want to embed in the markup.
+see below screenshot.
+[[img/swt-id.png]]
+Create a html div with ID="Swt-id" of your annotation.
+
+Part II:  
+we pass the Json arguments to the function call like, 
+{el: "#story-content",  --> the html element inside which the sweets needs to
+be loaded
+  "who":"scribe",  --> User name for the Sweets
+  "what":"img-anno", --> Type of annotation
+   "tag": "lolcat"},  --> tags
+Input the Sweet store URL in js/chapters.js line # 18,
+
+ 
+Step 3: Preview your HTML page on you local webserver to make sure the Sweets
+are embedded in the page. 
+
+Step 4: - Publish the HTML on internet.
+
+Please refer to our Restories below,..
+
+A Restory about a lake in the author's Community, which needs attention: http://ptx.restory.swtr.us/sarakki-lake-restory/
+
+A Restory about Gender discrimination: http://ptx.restory.swtr.us/gds/
+
+A Restory about a Auto Rickshaw menace in Bangalore: http://ptx.restory.swtr.us/auto-restory/
