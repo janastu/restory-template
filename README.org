@@ -22,16 +22,17 @@ annotations from the Sweet Store http://thestore.swtr.in
 Make a note of the Sweet ID, of the annotation you want to embed in the markup.
 see below screenshot.
 [[img/swt-id.png]]
-Create a html div with ID="Swt-id" of your annotation.
+Create a html div with ID="Swt-id" in your theme markup prepared from Step 1.
 
-Part II:  
+
+Part II: Make suitable changes to js/chapters.js file, to fetch annotations
+from SWT-Store
 we pass the Json arguments to the function call like, 
-{el: "#story-content",  --> the html element inside which the sweets needs to
-be loaded
+{el: "#story-content", -->container element to load sweets
   "who":"scribe",  --> User name for the Sweets
   "what":"img-anno", --> Type of annotation
    "tag": "lolcat"},  --> tags
-Input the Sweet store URL in js/chapters.js line # 18,
+Input the Sweet store URL in  line # 18,
 
  
 Step 3: Preview your HTML page on you local webserver to make sure the Sweets
