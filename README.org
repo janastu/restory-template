@@ -6,8 +6,8 @@ A set of HTML templates are avialable for a narrator to author his story.
 You can create your own Annotations or Sweets, log in to
 http://restory.swtr.us/
 load any image or website from the internet to Annotate. 
-Then you can use your annotations and Sweets to create a Restory. 
-To start with you can Restory with the Current available annotations at 
+Then you can use your annotations and Swts to create a Restory. 
+To start with you can Restory with the current available annotations at 
 http://restory.swtr.us/#/linked-data
 
 Step 1: Prepare Markup - An Author can choose to use the available HTML
