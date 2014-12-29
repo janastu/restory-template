@@ -1,4 +1,4 @@
-(function(chapters) {
+(function(swtConf) {
   var Sweet = Backbone.Model.extend({
     defaults: {
       'who': '',
@@ -27,7 +27,7 @@
           what = options.what;
       var who = options.who || null;
 
-      var url = "http://teststore.swtr.us/api/sweets/q?what=" + what;
+      var url = swtConf.swtstore + "/api/sweets/q?what=" + what;
 
       if(who) {
         url += '&who=' + who;
@@ -90,11 +90,11 @@
           };
       var swt = this.collection.find({'id': parseInt($(e.currentTarget).attr("target-id"))});
       if(!swt.get('annotate')) {
-        swt.set({'annotate':'http://restory.swtr.us/#/play?url=' +
+        swt.set({'annotate': swtConf.swtrApp + '/#/play?url=' +
                  encodeURIComponent(swt.get('where'))});
       }
       if(!swt.get('explore')) {
-        swt.set({'explore':'http://restory.swtr.us/#/linked-data?user=' +
+        swt.set({'explore': swtConf.swtrApp + '/#/linked-data?user=' +
                  swt.get('who')});
       }
 
@@ -108,7 +108,7 @@
     }
   });
   /* Populate views based on the requirement for the chapter */
-  _.each(chapters, function(chapter) {
+  _.each(swtConf.chapters, function(chapter) {
     chapter.collection = new Sweets();
     new StoryView(chapter);
   });
@@ -127,4 +127,4 @@
     $('body').find('li[for="' + $(this).attr('id') + '"]' ).addClass('active');
   });
 
-})(chapters);
+})(swtConf);
