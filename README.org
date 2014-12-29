@@ -1,0 +1,13 @@
+Create a restory from available media resources on the web.
+A set of HTML templates are avialable for a narrator to author his story.
+To author a story:
+- Edit the file "chapters.js", inside "js" directory.
+- Publish the HTML.
+
+Some example restory:
+
+http://ptx.restory.swtr.us/sarakki-lake-restory/
+
+http://ptx.restory.swtr.us/gds/
+
+http://ptx.restory.swtr.us/auto-restory/
