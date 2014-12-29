@@ -27,7 +27,7 @@
       what = options.what;
   var who = options.who || null;
 
-  var url = "http://teststore.swtr.us/api/sweets/q?what=" + what;
+  var url = "http://thestore.swtr.in/api/sweets/q?what=" + what;
 
   if(who) {
     url += '&who=' + who;
