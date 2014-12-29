@@ -28,9 +28,9 @@ Create a html div with ID="Swt-id" in your theme markup prepared from Step 1.
 Part II: Make suitable changes to js/chapters.js file, to fetch annotations
 from SWT-Store
 we pass the Json arguments to the function call like, 
-{el: "#story-content", "who":"scribe", "what":"img-anno", "tag": "lolcat"}
-el-->container element to load sweets,   "who" --> User name for the Sweets, "what" --> Type of annotation
-   "tag"--> common tagset for the el
+{el: "#story-content", "who":"scribe", "what":"img-anno", "tag": "lolcat"} 
+el->container element to load sweets, "who"-> User name for the Sweets, "what"-> Type of annotation
+   "tag"-> common tagset for the el.
 
 Input the Sweet store URL in  line # 18,
 
