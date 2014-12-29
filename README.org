@@ -5,6 +5,9 @@ To author a story:
 - Publish the HTML.
 
 Some example restory:
+
 http://ptx.restory.swtr.us/sarakki-lake-restory/
+
 http://ptx.restory.swtr.us/gds/
+
 http://ptx.restory.swtr.us/auto-restory/
